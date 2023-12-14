@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void findAndPrint(const char *string)
+void findAndPrint(char *string)
 {
     if (*string == '\0')
     {
@@ -21,7 +21,7 @@ int main()
 {
     char string[500];
 
-    printf("Enter a string : \n");
+    printf("Enter a string : ");
     fgets(string, sizeof(string), stdin);
 
     findAndPrint(string);
